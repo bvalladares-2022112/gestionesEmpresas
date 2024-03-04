@@ -1,0 +1,322 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "gestionEmpresas",
+    "dateExported": "2024-03-04T02:36:54.459Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "431a158c-7913-4745-83ae-718f37938607",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-04T02:21:13.231Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "377ad9b5-7546-4324-b8b5-5e6cd704100a",
+            "name": "company",
+            "containerId": "",
+            "created": "2024-03-04T02:26:41.481Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "b3c1ca54-a49b-4e2c-a98e-d26accf6367a",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-03-04T02:29:19.021Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "aa0a4054-f8d8-4785-bef4-f20ba6bef3e5",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "431a158c-7913-4745-83ae-718f37938607",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T02:21:19.462Z",
+            "modified": "2024-03-04T02:23:36.640Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Brener"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Valladares"
+                    },
+                    {
+                        "name": "username",
+                        "value": "bvalladares"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bvalladares@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7cf607f9-b682-48cf-b151-462c2cc43f42",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "431a158c-7913-4745-83ae-718f37938607",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-04T02:24:04.696Z",
+            "modified": "2024-03-04T02:24:34.780Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "bvalladares"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f72a339f-02ea-4032-81cc-52703e36e4cf",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "377ad9b5-7546-4324-b8b5-5e6cd704100a",
+            "name": "save",
+            "url": "/company/save",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-04T02:26:46.865Z",
+            "modified": "2024-03-04T02:30:53.145Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MzBhODBiNWU3NWIzZGIzMDBmNTciLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDk1MTkxNDIsImV4cCI6MTcwOTUyOTk0Mn0.3iXwU-knkg4Y8PLwMIr81_Tw5LWP2U4uHDcndk1a0Sg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Intelaf"
+                    },
+                    {
+                        "name": "description",
+                        "value": "de todo en tecnologia"
+                    },
+                    {
+                        "name": "age",
+                        "value": "50"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e5324425a5e18b34703575"
+                    },
+                    {
+                        "name": "impact",
+                        "value": "high"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d8d97500-48e5-440b-8e4d-b4d4e64cd584",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "b3c1ca54-a49b-4e2c-a98e-d26accf6367a",
+            "name": "save",
+            "url": "/category/save",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-04T02:29:43.341Z",
+            "modified": "2024-03-04T02:30:28.092Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "TECNOLOGIA"
+                    },
+                    {
+                        "name": "description",
+                        "value": "De todo en tecnologia"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "696e562d-33aa-4bd8-88be-2cb930542449",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "377ad9b5-7546-4324-b8b5-5e6cd704100a",
+            "name": "getAZ",
+            "url": "/company/orderAZ",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-04T02:31:30.957Z",
+            "modified": "2024-03-04T02:31:47.144Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3293593b-e8a5-4a2c-b69a-93572f94c005",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "377ad9b5-7546-4324-b8b5-5e6cd704100a",
+            "name": "getZA",
+            "url": "/company/orderZA",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-04T02:31:57.752Z",
+            "modified": "2024-03-04T02:32:05.494Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c0bf8ea0-9178-40b8-b100-1c2caf4dbb87",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "377ad9b5-7546-4324-b8b5-5e6cd704100a",
+            "name": "getAge",
+            "url": "/company/orderAge",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-04T02:32:23.044Z",
+            "modified": "2024-03-04T02:32:36.101Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "318ef175-df64-4956-8ec7-aa3561758bc4",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "377ad9b5-7546-4324-b8b5-5e6cd704100a",
+            "name": "update",
+            "url": "/company/update/65e5325825a5e18b34703578",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-03-04T02:32:46.265Z",
+            "modified": "2024-03-04T02:33:18.377Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Click"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0eef7c7d-3606-47c2-8909-cb0fea888b77",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "377ad9b5-7546-4324-b8b5-5e6cd704100a",
+            "name": "report",
+            "url": "/company/report",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-04T02:33:40.183Z",
+            "modified": "2024-03-04T02:33:48.689Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dbc06466-e789-4bee-b6ff-a8128099dce8",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "b3c1ca54-a49b-4e2c-a98e-d26accf6367a",
+            "name": "delete",
+            "url": "/category/delete/65e5324425a5e18b34703575",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-03-04T02:34:47.127Z",
+            "modified": "2024-03-04T02:35:24.171Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MzBhODBiNWU3NWIzZGIzMDBmNTciLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDk1MTkxNDIsImV4cCI6MTcwOTUyOTk0Mn0.3iXwU-knkg4Y8PLwMIr81_Tw5LWP2U4uHDcndk1a0Sg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f679904f-6d80-47e6-a93f-7e2a3a2cf2c5",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "b3c1ca54-a49b-4e2c-a98e-d26accf6367a",
+            "name": "get",
+            "url": "/category/get",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-04T02:35:43.530Z",
+            "modified": "2024-03-04T02:35:49.784Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7d69aad8-81f0-47db-98f0-d42425d535d6",
+            "colId": "83348140-9115-42e1-84d8-307cfc410f37",
+            "containerId": "b3c1ca54-a49b-4e2c-a98e-d26accf6367a",
+            "name": "update",
+            "url": "/category/update/65e5337225a5e18b34703585",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2024-03-04T02:35:57.511Z",
+            "modified": "2024-03-04T02:36:41.480Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "EDUCACION"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3056"
+        }
+    }
+}
